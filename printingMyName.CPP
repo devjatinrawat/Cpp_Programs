@@ -1,8 +1,9 @@
 #include<iostream>
-#include<conio.h>
-void main()
+
+using namespace std;
+int main()
 {
 
 cout<<"jatin";
-getch();
+return 0;
 }
