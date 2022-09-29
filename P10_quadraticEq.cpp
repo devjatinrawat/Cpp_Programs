@@ -1,23 +1,41 @@
-/*C++ Program to Find All Roots of a Quadratic Equation*/
+/*C++ Program to Find All Roots of a Quadratic Equation
+https://cdn.programiz.com/sites/tutorial2program/files/quadratic-equation-roots.jpg
 
-#include<iostream>
-#include<math.h>
+*/
 
+
+#include <iostream>
+#include <cmath>
 using namespace std;
-int main()
-{
 
-int a,b,c;
-float root1,root2;
-cout<<"\nEnter value of a=";
-cin>>a;
-cout<<"\nEnter value of b=";
-cin>>b;
-cout<<"\nEnter value of c=";
-cin>>c;
-root1=(-b+sqrt(b*b-4*a*c))/2*a;
-root2=(-b-sqrt(b*b-4*a*c))/(2*a);
-cout<<"\nRoot1="<<root1;
-cout<<"\nRoot2="<<root2;
-return 0;
+int main() {
+
+    float a, b, c, x1, x2, discriminant, realPart, imaginaryPart;
+    cout << "Enter coefficients a, b and c: ";
+    cin >> a >> b >> c;
+    discriminant = b*b - 4*a*c;
+    
+    if (discriminant > 0) {
+        x1 = (-b + sqrt(discriminant)) / (2*a);
+        x2 = (-b - sqrt(discriminant)) / (2*a);
+        cout << "Roots are real and different." << endl;
+        cout << "x1 = " << x1 << endl;
+        cout << "x2 = " << x2 << endl;
+    }
+    
+    else if (discriminant == 0) {
+        cout << "Roots are real and same." << endl;
+        x1 = -b/(2*a);
+        cout << "x1 = x2 =" << x1 << endl;
+    }
+
+    else {
+        realPart = -b/(2*a);
+        imaginaryPart =sqrt(-discriminant)/(2*a);
+        cout << "Roots are complex and different."  << endl;
+        cout << "x1 = " << realPart << "+" << imaginaryPart << "i" << endl;
+        cout << "x2 = " << realPart << "-" << imaginaryPart << "i" << endl;
+    }
+
+    return 0;
 }
