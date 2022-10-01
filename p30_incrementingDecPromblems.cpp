@@ -1,12 +1,12 @@
-
-
-#include<iostream.h>
+#include<iostream>
 #include<conio.h>
-void main()
+
+using namespace std;
+int main()
 {
-clrscr();
 int a=20;
 cout<<endl<<a++ + --a <<","<<++a - --a + a--;
 cout<<endl<<++a -a++<<","<<a-- + a++;
-getch();
+return 0;
 }
+
