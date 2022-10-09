@@ -1,10 +1,8 @@
 #include<iostream>
 using namespace std;
-
 int main()
 {
-int i,j;
-for(i=10;i>=1;i--)
-cout<<endl<<i;
+for(int i=1;i<=10;i++)
+cout<<"\n2 X "<<i<<" = "<<2*i ;
 return 0;
 }
