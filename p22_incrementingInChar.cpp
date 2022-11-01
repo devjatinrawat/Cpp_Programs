@@ -25,3 +25,23 @@ return 0;
 //A=65,B=66,...........
 //a=97,b=98,...........
 //0=48,1=49,.....9
+
+
+// Another code Added
+
+#include<iostream>
+
+using namespace std;
+
+int main(){
+
+int a = 10;
+int b ;
+ 
+b = ++a;
+// here a value must first be incremented and then assigned to b. a becomes 11 and b is 11.   
+cout<<a<<" "<<b<<" "<<endl;
+  
+ return 0;
+  
+}
