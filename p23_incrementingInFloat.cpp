@@ -14,3 +14,4 @@ cout<<'\n'<<a;
 return 0;
 }
 
+// Only the integer part gets added to one which makes it 878.87 , the ans 
