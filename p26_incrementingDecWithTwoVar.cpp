@@ -25,3 +25,19 @@ a   b
 8   9
 */
 
+// Adding One More code 
+
+#include<iostream>
+
+using namespace std;
+
+int main(){
+
+int a = 10;
+int b ;
+  
+b = a++;
+// first a value assigned to b and then incremented , which makes it b =10 , a = 11
+cout<<a<<" "<<b<<" "<<endl;
+return 0;
+}
